@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import {routing, appRoutingProviders} from './app.routing';
 import { DetalleproductoComponent } from './components/detalleproducto/detalleproducto.component';
+import { HijococheComponent } from './components/hijocoche/hijocoche.component';
+import { PadrecochesComponent } from './components/padrecoches/padrecoches.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DetalleproductoComponent } from './components/detalleproducto/detallepr
     ListaproductosComponent,
     HomeComponent,
     MenuComponent,
-    DetalleproductoComponent
+    DetalleproductoComponent,
+    HijococheComponent,
+    PadrecochesComponent
   ],
   imports: [
     BrowserModule, routing
