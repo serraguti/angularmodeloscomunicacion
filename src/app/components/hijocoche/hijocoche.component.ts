@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Coche } from 'src/app/models/Coche';
 
 @Component({
@@ -7,10 +7,11 @@ import { Coche } from 'src/app/models/Coche';
   styleUrls: ['./hijocoche.component.css']
 })
 export class HijococheComponent {
-  public car: Coche;
+  @Input() car!: Coche;
   public mensaje!: string;
   constructor() {
-    this.car = new Coche("Pontiac", "Firebird", 250, 20, false);
+    //CUANDO RECIBIMOS ELEMENTOS INPUT, NO PODEMOS 
+    //UTILIZARLOS DENTRO DEL CONSTRUCTOR
   }
 
   //TENDREMOS UN METODO QUE DEVOVERA TRUE O FALSE

@@ -9,6 +9,8 @@ import {routing, appRoutingProviders} from './app.routing';
 import { DetalleproductoComponent } from './components/detalleproducto/detalleproducto.component';
 import { HijococheComponent } from './components/hijocoche/hijocoche.component';
 import { PadrecochesComponent } from './components/padrecoches/padrecoches.component';
+import { PadredeportesComponent } from './components/padredeportes/padredeportes.component';
+import { HijodeporteComponent } from './components/hijodeporte/hijodeporte.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PadrecochesComponent } from './components/padrecoches/padrecoches.compo
     MenuComponent,
     DetalleproductoComponent,
     HijococheComponent,
-    PadrecochesComponent
+    PadrecochesComponent,
+    PadredeportesComponent,
+    HijodeporteComponent
   ],
   imports: [
     BrowserModule, routing
